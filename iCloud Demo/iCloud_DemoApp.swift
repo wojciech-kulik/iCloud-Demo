@@ -31,6 +31,11 @@ struct iCloud_DemoApp: App {
                         destination: CloudDocumentsView()
                             .navigationTitle("iCloud Documents")
                     )
+                    NavigationLink(
+                        "Key-Value Storage",
+                        destination: KeyValueStorageView()
+                            .navigationTitle("Key-Value Storage")
+                    )
                 }
                 .navigationBarTitleDisplayMode(.inline)
                 .navigationTitle("iCloud Demo") // SwiftUI bug - constraints conflict

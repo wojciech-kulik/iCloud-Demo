@@ -61,7 +61,7 @@ final class CloudKitRawViewModel: ObservableObject {
 
     func deleteItems(indexes: IndexSet) {
         let recordsToDelete = indexes.map { items[$0].recordName }
-
+        
         items = items.filter { !recordsToDelete.contains($0.recordName) }
 
         recordsToDelete.forEach {
