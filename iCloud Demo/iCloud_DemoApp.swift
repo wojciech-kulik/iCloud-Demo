@@ -14,19 +14,21 @@ struct iCloud_DemoApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                VStack {
+                List {
                     NavigationLink(
                         "CloudKit",
                         destination: CloudKitView()
                             .navigationTitle("CloudKit")
                             .environment(\.managedObjectContext, persistenceController.container.viewContext)
                     )
-                    .font(.system(size: 24))
-                    .padding(.top, 8)
-                    Spacer()
+                    NavigationLink(
+                        "iCloud Documents",
+                        destination: CloudDocumentsView()
+                            .navigationTitle("iCloud Documents")
+                    )
                 }
-                .navigationBarTitle("iCloud Demo", displayMode: .inline)
-                .padding()
+                .navigationBarTitleDisplayMode(.inline)
+                .navigationTitle("iCloud Demo") // SwiftUI bug - constraints conflict
             }
         }
     }

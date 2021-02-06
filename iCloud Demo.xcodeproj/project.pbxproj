@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		162636AF25CEDF7B00B9AC4B /* CloudService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162636AE25CEDF7B00B9AC4B /* CloudService.swift */; };
+		162636B325CEE1BB00B9AC4B /* CloudDocumentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162636B225CEE1BB00B9AC4B /* CloudDocumentsView.swift */; };
+		162636B625CEE1FD00B9AC4B /* CloudDocumentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162636B525CEE1FD00B9AC4B /* CloudDocumentsViewModel.swift */; };
 		16FF504F25CEB8F3006116F8 /* iCloud_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF504E25CEB8F3006116F8 /* iCloud_DemoApp.swift */; };
 		16FF505125CEB8F3006116F8 /* CloudKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF505025CEB8F3006116F8 /* CloudKitView.swift */; };
 		16FF505325CEB8F4006116F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16FF505225CEB8F4006116F8 /* Assets.xcassets */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		162636AE25CEDF7B00B9AC4B /* CloudService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudService.swift; sourceTree = "<group>"; };
+		162636B225CEE1BB00B9AC4B /* CloudDocumentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudDocumentsView.swift; sourceTree = "<group>"; };
+		162636B525CEE1FD00B9AC4B /* CloudDocumentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudDocumentsViewModel.swift; sourceTree = "<group>"; };
 		16FF504B25CEB8F3006116F8 /* iCloud Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iCloud Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FF504E25CEB8F3006116F8 /* iCloud_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCloud_DemoApp.swift; sourceTree = "<group>"; };
 		16FF505025CEB8F3006116F8 /* CloudKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitView.swift; sourceTree = "<group>"; };
@@ -51,6 +57,16 @@
 			path = "CloudKit+CoreData";
 			sourceTree = "<group>";
 		};
+		162636AC25CEDE7C00B9AC4B /* iCloud Documents */ = {
+			isa = PBXGroup;
+			children = (
+				162636AE25CEDF7B00B9AC4B /* CloudService.swift */,
+				162636B225CEE1BB00B9AC4B /* CloudDocumentsView.swift */,
+				162636B525CEE1FD00B9AC4B /* CloudDocumentsViewModel.swift */,
+			);
+			path = "iCloud Documents";
+			sourceTree = "<group>";
+		};
 		16FF504225CEB8F3006116F8 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				162636A925CEDA9300B9AC4B /* CloudKit+CoreData */,
+				162636AC25CEDE7C00B9AC4B /* iCloud Documents */,
 				16FF504E25CEB8F3006116F8 /* iCloud_DemoApp.swift */,
 				16FF505225CEB8F4006116F8 /* Assets.xcassets */,
 				16FF506425CEBA18006116F8 /* iCloud Demo.entitlements */,
@@ -168,8 +185,11 @@
 			files = (
 				16FF507C25CED027006116F8 /* iCloud_Demo.xcdatamodeld in Sources */,
 				16FF505825CEB8F4006116F8 /* Persistence.swift in Sources */,
+				162636AF25CEDF7B00B9AC4B /* CloudService.swift in Sources */,
 				16FF505125CEB8F3006116F8 /* CloudKitView.swift in Sources */,
 				16FF504F25CEB8F3006116F8 /* iCloud_DemoApp.swift in Sources */,
+				162636B325CEE1BB00B9AC4B /* CloudDocumentsView.swift in Sources */,
+				162636B625CEE1FD00B9AC4B /* CloudDocumentsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
