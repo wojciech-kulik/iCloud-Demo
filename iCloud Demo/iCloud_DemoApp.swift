@@ -16,10 +16,15 @@ struct iCloud_DemoApp: App {
             NavigationView {
                 List {
                     NavigationLink(
-                        "CloudKit",
+                        "CloudKit + CoreData",
                         destination: CloudKitView()
-                            .navigationTitle("CloudKit")
+                            .navigationTitle("CloudKit + CoreData")
                             .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                    )
+                    NavigationLink(
+                        "CloudKit",
+                        destination: CloudKitRawView()
+                            .navigationTitle("CloudKit")
                     )
                     NavigationLink(
                         "iCloud Documents",

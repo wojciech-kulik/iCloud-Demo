@@ -10,6 +10,8 @@
 		162636AF25CEDF7B00B9AC4B /* CloudService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162636AE25CEDF7B00B9AC4B /* CloudService.swift */; };
 		162636B325CEE1BB00B9AC4B /* CloudDocumentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162636B225CEE1BB00B9AC4B /* CloudDocumentsView.swift */; };
 		162636B625CEE1FD00B9AC4B /* CloudDocumentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162636B525CEE1FD00B9AC4B /* CloudDocumentsViewModel.swift */; };
+		162636C425CEEAC400B9AC4B /* CloudKitRawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162636C325CEEAC400B9AC4B /* CloudKitRawView.swift */; };
+		166D24F225CEEF620027E030 /* CloudKitRawViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166D24F125CEEF620027E030 /* CloudKitRawViewModel.swift */; };
 		16FF504F25CEB8F3006116F8 /* iCloud_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF504E25CEB8F3006116F8 /* iCloud_DemoApp.swift */; };
 		16FF505125CEB8F3006116F8 /* CloudKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF505025CEB8F3006116F8 /* CloudKitView.swift */; };
 		16FF505325CEB8F4006116F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16FF505225CEB8F4006116F8 /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 		162636AE25CEDF7B00B9AC4B /* CloudService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudService.swift; sourceTree = "<group>"; };
 		162636B225CEE1BB00B9AC4B /* CloudDocumentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudDocumentsView.swift; sourceTree = "<group>"; };
 		162636B525CEE1FD00B9AC4B /* CloudDocumentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudDocumentsViewModel.swift; sourceTree = "<group>"; };
+		162636C325CEEAC400B9AC4B /* CloudKitRawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitRawView.swift; sourceTree = "<group>"; };
+		166D24F125CEEF620027E030 /* CloudKitRawViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitRawViewModel.swift; sourceTree = "<group>"; };
 		16FF504B25CEB8F3006116F8 /* iCloud Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iCloud Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FF504E25CEB8F3006116F8 /* iCloud_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCloud_DemoApp.swift; sourceTree = "<group>"; };
 		16FF505025CEB8F3006116F8 /* CloudKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitView.swift; sourceTree = "<group>"; };
@@ -67,6 +71,15 @@
 			path = "iCloud Documents";
 			sourceTree = "<group>";
 		};
+		162636BD25CEEA7D00B9AC4B /* CloudKit Raw */ = {
+			isa = PBXGroup;
+			children = (
+				162636C325CEEAC400B9AC4B /* CloudKitRawView.swift */,
+				166D24F125CEEF620027E030 /* CloudKitRawViewModel.swift */,
+			);
+			path = "CloudKit Raw";
+			sourceTree = "<group>";
+		};
 		16FF504225CEB8F3006116F8 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				162636A925CEDA9300B9AC4B /* CloudKit+CoreData */,
+				162636BD25CEEA7D00B9AC4B /* CloudKit Raw */,
 				162636AC25CEDE7C00B9AC4B /* iCloud Documents */,
 				16FF504E25CEB8F3006116F8 /* iCloud_DemoApp.swift */,
 				16FF505225CEB8F4006116F8 /* Assets.xcassets */,
@@ -187,8 +201,10 @@
 				16FF505825CEB8F4006116F8 /* Persistence.swift in Sources */,
 				162636AF25CEDF7B00B9AC4B /* CloudService.swift in Sources */,
 				16FF505125CEB8F3006116F8 /* CloudKitView.swift in Sources */,
+				162636C425CEEAC400B9AC4B /* CloudKitRawView.swift in Sources */,
 				16FF504F25CEB8F3006116F8 /* iCloud_DemoApp.swift in Sources */,
 				162636B325CEE1BB00B9AC4B /* CloudDocumentsView.swift in Sources */,
+				166D24F225CEEF620027E030 /* CloudKitRawViewModel.swift in Sources */,
 				162636B625CEE1FD00B9AC4B /* CloudDocumentsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
