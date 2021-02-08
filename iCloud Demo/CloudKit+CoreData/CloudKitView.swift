@@ -13,13 +13,14 @@ struct CloudKitView: View {
 
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: false)],
-        animation: .default)
+        animation: .default
+    )
     private var items: FetchedResults<Item>
 
     var body: some View {
         List {
             ForEach(items) { item in
-                Text("\(item.timestamp!, formatter: itemFormatter)")
+                Text("\(item.timestamp!, formatter: .itemFormatter)")
             }
             .onDelete(perform: deleteItems)
         }
@@ -55,13 +56,6 @@ struct CloudKitView: View {
         }
     }
 }
-
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .none
-    formatter.timeStyle = .medium
-    return formatter
-}()
 
 struct CloudKitView_Previews: PreviewProvider {
     static var previews: some View {

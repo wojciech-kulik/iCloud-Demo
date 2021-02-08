@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct iCloud_DemoApp: App {
-    let persistenceController = PersistenceController.shared
+    let coreDataController = CoreDataController.shared
 
     var body: some Scene {
         WindowGroup {
@@ -19,7 +19,7 @@ struct iCloud_DemoApp: App {
                         "CloudKit + CoreData",
                         destination: CloudKitView()
                             .navigationTitle("CloudKit + CoreData")
-                            .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                            .environment(\.managedObjectContext, coreDataController.container.viewContext)
                     )
                     NavigationLink(
                         "CloudKit",

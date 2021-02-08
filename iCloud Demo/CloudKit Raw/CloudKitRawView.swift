@@ -13,7 +13,7 @@ struct CloudKitRawView: View {
     var body: some View {
         List {
             ForEach(viewModel.items, id: \.self) { item in
-                Text("\(item.timestamp, formatter: itemFormatter)")
+                Text("\(item.timestamp, formatter: .itemFormatter)")
             }
             .onDelete(perform: viewModel.deleteItems)
         }
@@ -25,13 +25,6 @@ struct CloudKitRawView: View {
         }
     }
 }
-
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .none
-    formatter.timeStyle = .medium
-    return formatter
-}()
 
 struct CloudKitRawView_Previews: PreviewProvider {
     static var previews: some View {

@@ -14,11 +14,13 @@
 		166D24F225CEEF620027E030 /* CloudKitRawViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166D24F125CEEF620027E030 /* CloudKitRawViewModel.swift */; };
 		166D24F625CEFC220027E030 /* KeyValueStorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166D24F525CEFC220027E030 /* KeyValueStorageView.swift */; };
 		166D24FA25CEFC2E0027E030 /* KeyValueStorageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166D24F925CEFC2E0027E030 /* KeyValueStorageViewModel.swift */; };
+		1688C40925D1C3ED003307FA /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1688C40825D1C3ED003307FA /* Formatter.swift */; };
+		1688C40D25D1C441003307FA /* ItemEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1688C40C25D1C441003307FA /* ItemEntity.swift */; };
 		16FF504F25CEB8F3006116F8 /* iCloud_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF504E25CEB8F3006116F8 /* iCloud_DemoApp.swift */; };
 		16FF505125CEB8F3006116F8 /* CloudKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF505025CEB8F3006116F8 /* CloudKitView.swift */; };
 		16FF505325CEB8F4006116F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16FF505225CEB8F4006116F8 /* Assets.xcassets */; };
 		16FF505625CEB8F4006116F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16FF505525CEB8F4006116F8 /* Preview Assets.xcassets */; };
-		16FF505825CEB8F4006116F8 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF505725CEB8F4006116F8 /* Persistence.swift */; };
+		16FF505825CEB8F4006116F8 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF505725CEB8F4006116F8 /* CoreDataController.swift */; };
 		16FF506825CEBA21006116F8 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16FF506725CEBA21006116F8 /* CloudKit.framework */; };
 		16FF507C25CED027006116F8 /* iCloud_Demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 16FF507A25CED027006116F8 /* iCloud_Demo.xcdatamodeld */; };
 /* End PBXBuildFile section */
@@ -31,12 +33,14 @@
 		166D24F125CEEF620027E030 /* CloudKitRawViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitRawViewModel.swift; sourceTree = "<group>"; };
 		166D24F525CEFC220027E030 /* KeyValueStorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueStorageView.swift; sourceTree = "<group>"; };
 		166D24F925CEFC2E0027E030 /* KeyValueStorageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueStorageViewModel.swift; sourceTree = "<group>"; };
+		1688C40825D1C3ED003307FA /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		1688C40C25D1C441003307FA /* ItemEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemEntity.swift; sourceTree = "<group>"; };
 		16FF504B25CEB8F3006116F8 /* iCloud Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iCloud Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FF504E25CEB8F3006116F8 /* iCloud_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCloud_DemoApp.swift; sourceTree = "<group>"; };
 		16FF505025CEB8F3006116F8 /* CloudKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitView.swift; sourceTree = "<group>"; };
 		16FF505225CEB8F4006116F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16FF505525CEB8F4006116F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		16FF505725CEB8F4006116F8 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		16FF505725CEB8F4006116F8 /* CoreDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
 		16FF505C25CEB8F4006116F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16FF506425CEBA18006116F8 /* iCloud Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iCloud Demo.entitlements"; sourceTree = "<group>"; };
 		16FF506725CEBA21006116F8 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
@@ -60,7 +64,7 @@
 			children = (
 				16FF507A25CED027006116F8 /* iCloud_Demo.xcdatamodeld */,
 				16FF505025CEB8F3006116F8 /* CloudKitView.swift */,
-				16FF505725CEB8F4006116F8 /* Persistence.swift */,
+				16FF505725CEB8F4006116F8 /* CoreDataController.swift */,
 			);
 			path = "CloudKit+CoreData";
 			sourceTree = "<group>";
@@ -78,6 +82,7 @@
 		162636BD25CEEA7D00B9AC4B /* CloudKit Raw */ = {
 			isa = PBXGroup;
 			children = (
+				1688C40C25D1C441003307FA /* ItemEntity.swift */,
 				162636C325CEEAC400B9AC4B /* CloudKitRawView.swift */,
 				166D24F125CEEF620027E030 /* CloudKitRawViewModel.swift */,
 			);
@@ -91,6 +96,14 @@
 				166D24F925CEFC2E0027E030 /* KeyValueStorageViewModel.swift */,
 			);
 			path = "KeyValue Storage";
+			sourceTree = "<group>";
+		};
+		1688C40B25D1C3F5003307FA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1688C40825D1C3ED003307FA /* Formatter.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		16FF504225CEB8F3006116F8 = {
@@ -113,6 +126,7 @@
 		16FF504D25CEB8F3006116F8 /* iCloud Demo */ = {
 			isa = PBXGroup;
 			children = (
+				1688C40B25D1C3F5003307FA /* Extensions */,
 				162636A925CEDA9300B9AC4B /* CloudKit+CoreData */,
 				162636BD25CEEA7D00B9AC4B /* CloudKit Raw */,
 				162636AC25CEDE7C00B9AC4B /* iCloud Documents */,
@@ -212,7 +226,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				16FF507C25CED027006116F8 /* iCloud_Demo.xcdatamodeld in Sources */,
-				16FF505825CEB8F4006116F8 /* Persistence.swift in Sources */,
+				1688C40D25D1C441003307FA /* ItemEntity.swift in Sources */,
+				16FF505825CEB8F4006116F8 /* CoreDataController.swift in Sources */,
 				162636AF25CEDF7B00B9AC4B /* CloudService.swift in Sources */,
 				16FF505125CEB8F3006116F8 /* CloudKitView.swift in Sources */,
 				162636C425CEEAC400B9AC4B /* CloudKitRawView.swift in Sources */,
@@ -221,6 +236,7 @@
 				162636B325CEE1BB00B9AC4B /* CloudDocumentsView.swift in Sources */,
 				166D24F225CEEF620027E030 /* CloudKitRawViewModel.swift in Sources */,
 				162636B625CEE1FD00B9AC4B /* CloudDocumentsViewModel.swift in Sources */,
+				1688C40925D1C3ED003307FA /* Formatter.swift in Sources */,
 				166D24FA25CEFC2E0027E030 /* KeyValueStorageViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

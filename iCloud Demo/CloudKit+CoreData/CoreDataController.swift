@@ -1,5 +1,5 @@
 //
-//  Persistence.swift
+//  CoreDataController.swift
 //  iCloud Demo
 //
 //  Created by Wojciech Kulik on 06/02/2021.
@@ -7,8 +7,8 @@
 
 import CoreData
 
-struct PersistenceController {
-    static let shared = PersistenceController()
+struct CoreDataController {
+    static let shared = CoreDataController()
 
     let container: NSPersistentCloudKitContainer
 
@@ -17,7 +17,8 @@ struct PersistenceController {
         container = NSPersistentCloudKitContainer(name: "iCloud_Demo")
 
         // Path to local mirror of CloudKit database
-        let cloudStoreLocation = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        let cloudStoreLocation = FileManager.default
+            .urls(for: .documentDirectory, in: .userDomainMask)[0]
             .appendingPathComponent("cloud.store")
 
         // iCloud container configuration
