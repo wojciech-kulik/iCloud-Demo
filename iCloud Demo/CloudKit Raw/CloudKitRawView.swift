@@ -17,8 +17,13 @@ struct CloudKitRawView: View {
             }
             .onDelete(perform: viewModel.deleteItems)
         }
-        .navigationBarItems(trailing: Button(action: viewModel.addItem) {
-            Image(systemName: "plus")
+        .navigationBarItems(trailing: HStack {
+            Button(action: viewModel.fetchItems) {
+                Image(systemName: "arrow.clockwise")
+            }
+            Button(action: viewModel.addItem) {
+                Image(systemName: "plus")
+            }
         })
         .onAppear {
             viewModel.fetchItems()

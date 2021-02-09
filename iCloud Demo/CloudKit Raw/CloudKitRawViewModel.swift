@@ -58,8 +58,7 @@ final class CloudKitRawViewModel: ObservableObject {
         let query = CKQuery(recordType: "Item", predicate: NSPredicate(value: true))
 
         publicDatabase.perform(query, inZoneWith: CKRecordZone.default().zoneID) { [weak self] results, error in
-            guard let results = results else { return }
-            guard let self = self else { return }
+            guard let self = self, let results = results else { return }
             if let error = error { return print(error) }
 
             DispatchQueue.main.async {
