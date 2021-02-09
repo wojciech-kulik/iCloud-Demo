@@ -11,8 +11,8 @@ import CloudKit
 final class CloudKitRawViewModel: ObservableObject {
     @Published var items: [ItemEntity] = []
 
-    private let privateDatabase = CKContainer(identifier: "iCloud.pl.wojciechkulik.icloud-demo").privateCloudDatabase
-    private let publicDatabase = CKContainer(identifier: "iCloud.pl.wojciechkulik.icloud-demo").publicCloudDatabase
+    private let privateDatabase = CKContainer(identifier: AppConstants.cloudContainerId).privateCloudDatabase
+    private let publicDatabase = CKContainer(identifier: AppConstants.cloudContainerId).publicCloudDatabase
 
     init() {
         fetchItems()

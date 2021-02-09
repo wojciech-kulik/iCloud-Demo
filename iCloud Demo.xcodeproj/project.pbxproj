@@ -16,6 +16,7 @@
 		166D24FA25CEFC2E0027E030 /* KeyValueStorageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166D24F925CEFC2E0027E030 /* KeyValueStorageViewModel.swift */; };
 		1688C40925D1C3ED003307FA /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1688C40825D1C3ED003307FA /* Formatter.swift */; };
 		1688C40D25D1C441003307FA /* ItemEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1688C40C25D1C441003307FA /* ItemEntity.swift */; };
+		16BF5A7425D2F3C9006129AB /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BF5A7325D2F3C9006129AB /* AppConstants.swift */; };
 		16FF504F25CEB8F3006116F8 /* iCloud_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF504E25CEB8F3006116F8 /* iCloud_DemoApp.swift */; };
 		16FF505125CEB8F3006116F8 /* CloudKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FF505025CEB8F3006116F8 /* CloudKitView.swift */; };
 		16FF505325CEB8F4006116F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16FF505225CEB8F4006116F8 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 		166D24F925CEFC2E0027E030 /* KeyValueStorageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueStorageViewModel.swift; sourceTree = "<group>"; };
 		1688C40825D1C3ED003307FA /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 		1688C40C25D1C441003307FA /* ItemEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemEntity.swift; sourceTree = "<group>"; };
+		16BF5A7325D2F3C9006129AB /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		16FF504B25CEB8F3006116F8 /* iCloud Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iCloud Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FF504E25CEB8F3006116F8 /* iCloud_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCloud_DemoApp.swift; sourceTree = "<group>"; };
 		16FF505025CEB8F3006116F8 /* CloudKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitView.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				162636AC25CEDE7C00B9AC4B /* iCloud Documents */,
 				166D24F425CEFC110027E030 /* KeyValue Storage */,
 				16FF504E25CEB8F3006116F8 /* iCloud_DemoApp.swift */,
+				16BF5A7325D2F3C9006129AB /* AppConstants.swift */,
 				16FF505225CEB8F4006116F8 /* Assets.xcassets */,
 				16FF506425CEBA18006116F8 /* iCloud Demo.entitlements */,
 				16FF505C25CEB8F4006116F8 /* Info.plist */,
@@ -236,6 +239,7 @@
 				162636B325CEE1BB00B9AC4B /* CloudDocumentsView.swift in Sources */,
 				166D24F225CEEF620027E030 /* CloudKitRawViewModel.swift in Sources */,
 				162636B625CEE1FD00B9AC4B /* CloudDocumentsViewModel.swift in Sources */,
+				16BF5A7425D2F3C9006129AB /* AppConstants.swift in Sources */,
 				1688C40925D1C3ED003307FA /* Formatter.swift in Sources */,
 				166D24FA25CEFC2E0027E030 /* KeyValueStorageViewModel.swift in Sources */,
 			);
@@ -368,7 +372,7 @@
 				CODE_SIGN_ENTITLEMENTS = "iCloud Demo/iCloud Demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"iCloud Demo/Preview Content\"";
-				DEVELOPMENT_TEAM = JT56B63DU5;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "iCloud Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -376,7 +380,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "pl.wojciechkulik.iCloud-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.company.icloud-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -391,7 +395,7 @@
 				CODE_SIGN_ENTITLEMENTS = "iCloud Demo/iCloud Demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"iCloud Demo/Preview Content\"";
-				DEVELOPMENT_TEAM = JT56B63DU5;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "iCloud Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -399,7 +403,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "pl.wojciechkulik.iCloud-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.company.icloud-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

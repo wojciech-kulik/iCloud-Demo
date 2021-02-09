@@ -24,7 +24,7 @@ struct CoreDataController {
         // iCloud container configuration
         let cloudStoreDescription = NSPersistentStoreDescription(url: cloudStoreLocation)
         cloudStoreDescription.cloudKitContainerOptions = NSPersistentCloudKitContainerOptions(
-            containerIdentifier: "iCloud.pl.wojciechkulik.icloud-demo"
+            containerIdentifier: AppConstants.cloudContainerId
         )
         container.persistentStoreDescriptions = [cloudStoreDescription]
 
